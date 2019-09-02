@@ -16,12 +16,12 @@ sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
   return gulp.src(['./html/sass/*.scss', './html/sass/**/*.scss'], { sourcemaps: true })
-    .pipe(sass({
-      outputStyle: 'compressed',
-    }))
     //エラーの処理
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
+    }))
+    .pipe(sass({
+      outputStyle: 'compressed',
     }))
     //メディアクエリを一つにまとめる
     .pipe(mq({
@@ -51,8 +51,8 @@ gulp.task('bs', function () {
       baseDir: './html/',
       index: 'index.html'
     },
-    open: true,
-    browser: ["chrome"]
+    open: true,//ここをfalseにしておいたら勝手にブラウザに移動しなくなる
+    browser: ["google chrome"]
   })
 })
 
