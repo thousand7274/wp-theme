@@ -1,0 +1,72 @@
+%hamburger{
+  background-color:aliceblue;
+  width: 100%;
+  height: 5px;
+  border-radius: 1px;
+  transition: all 0.5s ease;
+}
+
+.menu-container{
+  width: 55px;
+  height: 55px;
+  border: 3px solid aliceblue;
+  // margin: 30px auto 0 auto;
+  position: relative;
+  transition: all 0.5s ease;
+
+  &__text{
+    position: absolute;
+    bottom: 0;
+    left: 2.5px;
+    color:aliceblue;
+  }
+
+  & span{
+    @extend %hamburger;
+    display: block;
+    position: relative;
+    left: 0;
+    top:15px;
+
+    &::before{
+      @extend %hamburger;
+      content:"";
+      position:absolute;
+      top: -10px;
+    }
+
+    &::after{
+      @extend %hamburger;
+      content:"";
+      position:absolute;
+      top: 10px;
+    }
+  }
+  &:hover{
+    cursor: pointer;
+    border-radius: 20%;
+
+    & span{
+      background-color: transparent;
+
+      &::before{
+        transform: rotate(45deg) translate(6.5px,6px);
+      }
+
+      &::after{
+        transform: rotate(-45deg)translate(6px,-9px);
+      }
+
+    & p{
+       color: rgb(255, 241, 51);
+    }
+    }
+
+
+  }
+
+}
+
+// .menu-container span,
+// .menu-container span::before,
+// .menu-container span::after
