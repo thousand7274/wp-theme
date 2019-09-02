@@ -1,21 +1,7 @@
 .footer{
-  background-color: $header-bgc;
-  color:$header-font;
-
+  background-color: $bg-color;
+  color:$font-color;
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
 }
-.sm-nav ul{
-    display: flex;
-    justify-content: space-between;
-
-  }
-  .sm-nav li{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    align-content: center;
-    text-align: center;
-
-    & span{
-      margin-top: 10px;
-    }
-  }

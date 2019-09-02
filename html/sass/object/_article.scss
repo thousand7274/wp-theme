@@ -6,6 +6,9 @@
   background-color: rgb(197, 193, 253);
   display: flex;
   flex-direction: column;
+  width: 315px;
+  justify-content: center;
+  margin: 10px;
 
   &__date{
     text-align: center;
@@ -28,9 +31,6 @@
 
   &__more{
     text-align: right;
-    height: 15px;
-    // padding: 10px;
-    // background: rgb(129, 173, 255);
-
+    padding-bottom: 10px;
   }
 }

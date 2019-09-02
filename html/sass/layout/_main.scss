@@ -1,3 +1,10 @@
 .top-img img{
   width: 100vw;
 }
+
+// list.html
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

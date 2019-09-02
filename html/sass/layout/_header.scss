@@ -1,8 +1,8 @@
 // スマホの時
 
 .header{
-  background-color: $header-bgc;
-  color: $header-font;
+  background-color: $bg-color;
+  color: $font-color;
 
 
   &__logo{
@@ -27,8 +27,8 @@
 /* MediaQuery */
 @media only screen and (min-width: $breakpoint-xl) {
 .header{
-  background-color: $header-bgc;
-  color: $header-font;
+  background-color: $bg-color;
+  color: $font-color;
   display: flex;
   justify-content: space-around;
 
