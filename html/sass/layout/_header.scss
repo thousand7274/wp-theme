@@ -1,54 +1,82 @@
-$header--bgc: #333;
-$header--font: #fff;
+// スマホの時
 
 .header{
-  background-color: $header--bgc;
-  color: $header--font;
+  background-color: $header-bgc;
+  color: $header-font;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  &__logo{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+  }
 
   &__search{
-
-
-    &__form{
-
-      position:relative;
-      max-width:300px;
-      margin-bottom:20px;
-
-    }
-    &__sbox{
-      height:50px;
-      padding:0 10px;
-      position:absolute;
-      left:0;
-      top:0;
-      border-radius:25px;
-      outline:0;
-      background:#eee;
-
-      &:hover{
-        color:#888;
-      }
-    }
-
-    &__btn{
-      height:50px;
-      width:50px;
-      position:absolute;
-      left:250px;
-      top:0;
-      background:#7fbfff;
-      color:#fff;
-      border:none;
-      border-radius:0 25px 25px 0;
-
-      & .fa-search{
-        font-size:20px;
-        position:absolute;
-        top:30%;
-        left:30%;
-      }
-    }
+   display: none;
   }
+
+  &__nav ul{
+    display: none;
+  }
+
 }
+
+
+
+/* MediaQuery */
+// @media only screen and (min-width: $breakpoint-xl) {
+// .header{
+//   background-color: $header-bgc;
+//   color: $header-font;
+//   display: flex;
+//   justify-content: space-around;
+
+//   &__logo{
+
+//   }
+
+//   &__search{
+//     display: block;
+//     position:relative;
+//     max-width:300px;
+//     margin-bottom:20px;
+//   }
+
+//   &__text-box{
+//     height:50px;
+//     padding:0 10px;
+//     position:absolute;
+//     left:0;
+//     top:0;
+//     border-radius:2px;
+//     outline:0;
+//     background:#eee;
+//   }
+
+//   &__btn{
+//     height:50px;
+//     position:absolute;
+//     left:150px;/*アイコン左右の位置調整*/
+//     top:0;
+//     background:none;
+//     color:#666;
+//     border:none;
+//     font-size:20px;/*アイコンサイズ*/
+
+//     &:hover{
+//       color:#7fbfff;
+//     }
+
+//   }
+
+//   &__nav ul{
+//     display: flex;
+//   }
+// &__nav li{
+//     margin: 10px;
+//   }
+// }
+// }
+/* MediaQuery end */

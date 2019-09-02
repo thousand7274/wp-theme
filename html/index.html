@@ -6,29 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wordpressの課題</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
   <header class="header">
-    <div class="header__search">
-      <form class="header__search__form" action="" method="get">
-        <input class="header__search__sbox" id="s" name="s" type="text" placeholder="キーワード検索">
-        <button class="header__search__btn" type="submit">
-          <i class="fas fa-search"></i></button>
-      </form>
+    <!-- PCの時のみ サーチバー -->
+    <form class="header__search" action="" method="get">
+      <input class="header__text-box" id="s" name="s" type="text" placeholder="フリーワードを入力">
+      <button type="submit" class="header__btn"><i class="fas fa-search"></i></button>
+    </form>
+    <!-- </PCの時のみ サーチバー> -->
+    <div class="header__logo">
+      四つ手網 近藤
     </div>
-    <img src="../img/OCHINAGATARI.png" alt="タイトル">
+    <!-- スマホの時のみ ハンバーガーメニュー -->
+    <div class="menu-container">
+      <span></span>
+      <p class="menu-container__text">menu</p>
+    </div>
+    <!-- /スマホの時のみ ハンバーガーメニュー -->
+    <!-- PCの時のみ メニュー -->
     <div class="header__nav">
       <ul>
-        <li>top</li>
-        <li>recent</li>
-        <li>date</li>
-        <li>category</li>
+        <li>トップ</li>
+        <li>四つ手網とは</li>
+        <li>施設案内</li>
+        <li>予約</li>
+        <li>最近の様子</li>
       </ul>
     </div>
-
+    <!-- /PCの時のみ メニュー -->
   </header>
-  <main></main>
-  <footer></footer>
+  <main>
+    <img src="../img/top.jpg" alt="瀬戸内海">
+  </main>
+  <footer>
+    <div class="footer">(c)Copyright</div>
+
+  </footer>
 
 </body>
 </html>
