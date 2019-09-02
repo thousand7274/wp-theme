@@ -52,7 +52,7 @@ gulp.task('bs', function () {
       index: 'index.html'
     },
     open: true,//ここをfalseにしておいたら勝手にブラウザに移動しなくなる
-    browser: ["google chrome"]
+    browser: ["google chrome"] //windowsはchrome.exe
   })
 })
 
