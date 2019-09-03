@@ -1,13 +1,30 @@
+// index.html
+
 .top-img img{
   width: 100vw;
 }
 
+
 // list.html
-.container{
+.main{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+  &__container{
+    flex-direction: column;
+  }
 }
-.title{
-  margin: 60px;
+.main-title{
+  // display: flex;
+  text-align: center;
+  margin: 30px;
 }
+
+// single.html
+/* MediaQuery */
+@media only screen and (min-width: $breakpoint-md) {
+  .main{
+    justify-content: space-around;
+  }
+
+}
+/* MediaQuery end */

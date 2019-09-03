@@ -1,5 +1,15 @@
+// 共通
 @import 'btn';
-@import 'form';
-@import 'article';
+@import 'border';
+
+// index.html
+@import 'topic';
 @import 'desc';
 @import '_blog-list';
+
+// list.html
+@import 'article-list';
+@import 'sidebar';
+
+// single.html
+@import 'article';

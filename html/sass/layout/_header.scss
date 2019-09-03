@@ -3,7 +3,10 @@
 .header{
   background-color: $bg-color;
   color: $font-color;
+  width: 100%;
+}
 
+.nav{
 
   &__logo{
     padding: 20px;
@@ -11,35 +14,41 @@
 
   }
 
-  &__nav ul{
+  &__menu ul{
     display: none;
   }
-
 }
+
 
 
 
 /* MediaQuery */
 @media only screen and (min-width: $breakpoint-md) {
-.header{
-  background-color: $bg-color;
-  color: $font-color;
-  display: flex;
-  justify-content: space-around;
-
-  &__logo{
+  .header{
+    background-color: $bg-color;
+    color: $font-color;
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
-
-  &__nav ul{
+  .nav{
     display: flex;
-    margin: 10px 0;
-  }
+    flex-direction: row;
+    justify-content: space-around;
 
-  &__nav li{
-    margin: 10px;
+    &__logo{
+      display: flex;
+      align-items: center;
+
+    }
+
+    &__menu ul{
+      display: flex;
+      margin: 10px 0;
+    }
+
+    &__menu li{
+      margin: 10px;
+    }
   }
-}
 }
 /* MediaQuery end */
