@@ -1,0 +1,67 @@
+
+/* ------------------------------------
+  list.html
+------------------------------------ */
+
+// 記事一覧
+
+.list-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 768px;
+  width: 100%;
+  justify-content: center;
+
+}
+.article-list{
+  background-color: rgb(142, 204, 255);
+  // display: flex;
+  // flex-wrap: wrap;
+  width: calc(100% - 10px);
+  margin-top: 10px;
+
+  & img{
+    object-fit: contain;
+    max-width: 100%;
+  }
+
+  &__date{
+    text-align: left;
+    border: 1px solid  rgb(142, 204, 255);
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  &__title{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+
+
+  }
+
+  &__text{
+    margin: 10px;
+  }
+
+  &__more{
+    text-align: right;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+/* MediaQuery */
+@media only screen and (min-width: $breakpoint-ori) {
+
+  .list-wrapper{
+    justify-content: flex-start;
+  }
+  .article-list{
+    width: calc(50% - 20px / 2);
+    margin-left: 10px;
+  }
+
+}
+/* MediaQuery end */

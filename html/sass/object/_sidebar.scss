@@ -1,0 +1,18 @@
+// list.html,single.html
+.sidebar{
+  display: none;
+}
+
+/* MediaQuery */
+@media only screen and (min-width: $breakpoint-md) {
+  .sidebar{
+
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid #000;
+
+  }
+
+}
+/* MediaQuery end */
