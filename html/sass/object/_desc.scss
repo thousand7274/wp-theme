@@ -22,7 +22,7 @@
 @media only screen and (min-width: 768px){
   .desc{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   margin: 65px;
   // justify-content: center;
   &__img{
@@ -32,8 +32,7 @@
 
   &__text{
     width: 50%;
-    justify-content: center;
-    margin-right: 10px;
+    margin-left: 10px;
     }
   }
 
