@@ -34,3 +34,19 @@
     padding-bottom: 10px;
   }
 }
+
+@media only screen and (min-width: 768px) {
+
+  /* 100%から-30pxで４つの要素に分配するイメージ */
+  // .flex .item{
+  //   width: calc(25% - 30px / 4);
+  //   margin-right: 10px;
+  // }
+
+  // .flex .item:nth-child(4n){
+  //   margin-right: 0;
+
+  // }
+
+}
+/* MediaQuery end */

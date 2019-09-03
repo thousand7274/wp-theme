@@ -6,14 +6,8 @@
 
 
   &__logo{
-
-    text-align: center;
     padding: 10px;
 
-  }
-
-  &__search{
-   display: none;
   }
 
   &__nav ul{
@@ -25,49 +19,16 @@
 
 
 /* MediaQuery */
-@media only screen and (min-width: $breakpoint-xl) {
+@media only screen and (min-width: $breakpoint-md) {
 .header{
   background-color: $bg-color;
   color: $font-color;
   display: flex;
   justify-content: space-around;
 
-  // &__logo{
-
-  // }
-
-  &__search{
-    display: block;
-    position:relative;
-    max-width:300px;
-    margin-bottom:20px;
-  }
-
-  &__text-box{
-    height:50px;
-    padding:0 10px;
-    position:absolute;
-    left:0;
-    top:0;
-    border-radius:2px;
-    outline:0;
-    background:#eee;
-  }
-
-  &__btn{
-    height:50px;
-    position:absolute;
-    left:150px;/*アイコン左右の位置調整*/
-    top:0;
-    background:none;
-    color:#666;
-    border:none;
-    font-size:20px;/*アイコンサイズ*/
-
-    &:hover{
-      color:#7fbfff;
-    }
-
+  &__logo{
+    display: flex;
+    align-items: center;
   }
 
   &__nav ul{
