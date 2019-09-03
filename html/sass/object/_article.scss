@@ -1,3 +1,37 @@
+// 新着情報
+
+.topics{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+
+
+
+
+  &__info {
+    width: 100%;
+
+    & dl {
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+
+      & dt{
+        padding-bottom: 5px;
+      }
+    }
+  }
+  &__weather{
+    width: 100%;
+    background-color: rgb(109, 232, 248);
+  }
+}
+
+
+/* ------------------------------------
+  list.html
+------------------------------------ */
+
+// 記事一覧
 .list-title{
   text-align: center;
   margin: 30px;
@@ -35,18 +69,37 @@
   }
 }
 
+
+
 @media only screen and (min-width: 768px) {
+  .topics{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  /* 100%から-30pxで４つの要素に分配するイメージ */
-  // .flex .item{
-  //   width: calc(25% - 30px / 4);
-  //   margin-right: 10px;
-  // }
 
-  // .flex .item:nth-child(4n){
-  //   margin-right: 0;
 
-  // }
+  &__info {
+    width: calc(50% - 100px / 2);
+    margin-right: 20px;
+
+
+    & dl {
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+
+      & dt{
+        padding-bottom: 5px;
+      }
+    }
+  }
+  &__weather{
+    // margin: 30px;
+    width: calc(50% - 100px / 2);
+    background-color: rgb(109, 232, 248);
+  }
+}
+
 
 }
 /* MediaQuery end */
