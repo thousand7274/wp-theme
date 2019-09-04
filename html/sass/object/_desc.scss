@@ -9,6 +9,14 @@
   flex-direction: column;
   margin: 30px;
   // border: 1px solid #000;
+    &__title{
+    font-size: 20px;
+
+      & span{
+        color: $bg-color;
+        font-size: 28px;
+      }
+    }
 
   &__img{
     max-width: 700px;
@@ -39,10 +47,22 @@
     width: 50%;
   }
 
+  &__title{
+    font-size: 20px;
+
+    & span{
+      color: $bg-color;
+      font-size: 28px;
+    }
+  }
+
 
   &__text{
     width: 50%;
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     }
   }
 

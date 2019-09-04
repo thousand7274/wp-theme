@@ -1,4 +1,4 @@
-// list.html,single.html
+// single.html
 .sidebar{
   display: none;
 }
@@ -6,12 +6,32 @@
 /* MediaQuery */
 @media only screen and (min-width: $breakpoint-md) {
   .sidebar{
-
+    margin: 30px;
     display: flex;
     flex-direction: column;
-    width: 25%;
-    border: 1px solid #000;
+    width: 35%;
+    // border: 1px solid #000;
+    background-color: aliceblue;
 
+    &__title{
+      background-color: $bg-color;
+      color: white;
+      padding: 15px;
+      text-align: left;
+
+      & span{
+        margin-left: 10px;
+      }
+    }
+
+    &__contents{
+      margin: 15px 10px;
+      text-align: left;
+      font-size: 14px;
+
+
+
+    }
   }
 
 }

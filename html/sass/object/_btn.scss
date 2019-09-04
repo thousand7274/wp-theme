@@ -8,11 +8,12 @@
   margin-bottom: env(safe-area-inset-bottom);
 
   & ul{
-  display: flex;
-  justify-content: space-between;
+
+    display: flex;
+    justify-content: space-between;
 
 
-    & li{
+    & a{
       display: flex;
       flex-direction: column;
       margin: 10px;
@@ -23,11 +24,13 @@
         & span{
           font-size: 14px;
         }
-
-
     }
   }
 }
+
+// もっと読むボタン
+
+
 @media only screen and (min-width: $breakpoint-md) {
 
   .sm-nav{

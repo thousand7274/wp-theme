@@ -12,7 +12,7 @@
   <header class="header">
     <div class="nav">
       <h1 class="nav__logo">
-        四つ手網 近藤
+        四つ手小屋 <span>近藤</span>
       </h1>
       <!-- PCの時のみ メニュー -->
       <div class="nav__menu">
@@ -27,27 +27,52 @@
     <!-- /PCの時のみ メニュー -->
     <div class="border"></div>
   </header>
+  <main>
+    <div class="article">
+      <div class="article__wrapper">
+        <span class="article__nav">前へ|<i class="fas fa-home"></i>|次へ</span>
+        <div class="article__container">
+          <h2 class="article__title">おためしで書いています</h2>
+          <div class="article__date"><i class="fas fa-calendar-check"></i><span>2019.09.02(mon)</span></div>
+          <div class="article__text">
+            こんにちは！最近暑さも和らいで少しずつ秋の気配を感じるようになりましたね。ですが沖縄では台風が近づいており、週末に直撃するとかしないとか・・・。
+            <img src="img/03.jpg" alt="四つ出小屋の中" width="700">
+          </div>
+        </div>
+      </div>
+      <!-- サイドバー -->
+      <aside class="sidebar">
+        <div class="sidebar__plofile">
+          <h2 class="sidebar__title"><i class="far fa-id-badge"></i><span>プロフィール</span></h2>
+          <ul class="sidebar__contents">
+            <img src="#" alt="著者の写真">
+            <li>名前: ちな</li>
+            <li>居住地: 岡山県岡山市</li>
+            <li>趣味: 音楽鑑賞、ゲーム</li>
+          </ul>
+        </div>
+        <div class="sidebar__new-article">
+          <h2 class="sidebar__title"><i class="fas fa-bell"></i><span>更新記事</span></h2>
+          <ul class="sidebar__contents">
+            <li>2019.01.01 更新記事１</li>
+            <li>2019.01.01 更新記事２</li>
+            <li>2019.01.01 更新記事３</li>
+          </ul>
 
-  <main class="article">
-    <div class="article__container">
-      <div class="article-wrapper">
+        </div>
+        <div class="sidebar__category-list">
+          <h2 class="sidebar__title"><i class="fas fa-list"></i><span>カテゴリー別</span></h2>
+          <ul class="sidebar__contents">
+            <li>カテゴリー１</li>
+            <li>カテゴリー２</li>
+            <li>カテゴリー３</li>
 
-      </div>
-    </div>
-    <!-- サイドバー -->
-    <aside class="sidebar">
-      <div class="sidebar__plofile">
-      </div>
-      <div class="sidebar__new-article">
-      </div>
-      <div class="sidebar__category-list">
-      </div>
-    </aside>
-    <!-- /サイドバー -->
+
+        </div>
+      </aside>
+      <!-- /サイドバー -->
     </div>
   </main>
-
-
 
   <footer class="footer">
     <div>(c)Copyright</div>
@@ -56,10 +81,10 @@
   <!-- スマホのみ -->
   <nav class="sm-nav">
     <ul>
-      <li><i class="fas fa-home fa-2x"></i><span>ホーム</span></li>
-      <li><i class="fas fa-fish fa-2x"></i><span>施設案内</span></li>
-      <li><i class="fas fa-edit fa-2x"></i><span>予約する</span></li>
-      <li><i class="fas fa-list fa-2x"></i><span>ブログ</span></li>
+      <li><a href="index.html"><i class="fas fa-home fa-2x"></i><span>ホーム</span></a></li>
+      <li><a href="#"><i class="fas fa-fish fa-2x"></i><span>施設案内</span></a></li>
+      <li><a href="#"><i class="fas fa-edit fa-2x"></i><span>予約する</span></a></li>
+      <li><a href="list.html"><i class="fas fa-list fa-2x"></i><span>ブログ</span></a></li>
     </ul>
   </nav>
   <!-- /スマホのみ -->
