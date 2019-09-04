@@ -52,9 +52,8 @@
 
       & a{
         text-decoration: none;
-        color:$link-color;
+        color: $link-color;
         &:hover{
-          // color:rgb(244, 214, 248);
           padding: 20px 0;
           border-top:3px dotted $header-hovercolor;
           border-bottom: 3px dotted $header-hovercolor;

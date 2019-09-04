@@ -21,34 +21,39 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background-color: #fff;
+  background-color: $sub-color;
 
 }
 .article-list{
-  background-color: rgb(142, 204, 255);
+  background-color: $sub-color;
   // display: flex;
   // flex-wrap: wrap;
   width: calc(100% - 10px);
   margin-top: 10px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
 
   & img{
     object-fit: contain;
     max-width: 100%;
+    border-radius: 10px 10px 0 0;
   }
 
   &__date{
     text-align: left;
-    border: 1px solid  rgb(142, 204, 255);
-    margin: 10px;
+    // border: 1px solid  rgb(142, 204, 255);
+    margin-top: 10px;
     font-size: 14px;
+    background: rgba($bg-color,.3);
+
+
   }
 
   &__title{
     font-size: 24px;
     text-align: center;
-    margin-top: 10px;
-
-
+    padding: 10px;
+    background: rgba($bg-color,.5);
   }
 
   &__text{

@@ -9,10 +9,12 @@
 
   &__info {
     width: 100%;
+    border: 1px dashed $border-color;
+
 
     & dl {
       padding: 15px 0;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $border-color;
 
       & dt{
         padding-bottom: 5px;
@@ -21,11 +23,12 @@
   }
   &__weather{
     width: 100%;
-    background-color: rgb(109, 232, 248);
+    border: 1px dashed $border-color;
   }
 }
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: $breakpoint-md) {
   /* ------------------------------------
     index.html
   ------------------------------------ */
@@ -43,7 +46,7 @@
 
     & dl {
       padding: 15px 0;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $border-color;
 
       & dt{
         padding-bottom: 5px;
@@ -53,7 +56,7 @@
   &__weather{
     // margin: 30px;
     width: calc(50% - 100px / 2);
-    background-color: rgb(109, 232, 248);
+
   }
 }
 

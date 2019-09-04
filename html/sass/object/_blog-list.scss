@@ -5,7 +5,7 @@
   margin: 30px;
   & dl {
     padding: 15px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $border-color;
   }
   & dt {
     padding-bottom: 5px;
@@ -15,7 +15,7 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpoint-md) {
 .blog{
   margin: 60px;
   }

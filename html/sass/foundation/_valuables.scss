@@ -4,9 +4,13 @@
 $font-size: 16px;
 // カラー
 $bg-color: rgb(99, 180, 255);
+$sub-color:rgb(255,255,255);
 $font-color: rgb(28, 32, 53);
 $link-color:rgb(0,0,0);
 $header-hovercolor:rgb(243, 243, 144);
+$border-color:#ccc;
+
+
 
 // ブレークポイント
 $breakpoint-ori:500px;
@@ -14,6 +18,9 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+
+// フォントファミリー
+$font-fam: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
 
 // ボーダー
 @mixin border{

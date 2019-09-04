@@ -11,12 +11,11 @@
   &__nav{
     font-size: 18px;
     justify-content: center;
-    background: #fff;
+    background: $sub-color;
     margin: 10px;
   }
   &__container{
-    background-color: #fff;
-    height: 600px;
+    background-color: $sub-color;
     width: 100%;
     padding: 20px;
     margin-top: 30px;
