@@ -1,2 +1,10 @@
 node_modules
 # こうするとsorcetreeで無視される
+wp-includes/
+wp-admin/
+wp-content/languages/
+# wp-content/plugins/
+wp-content/uploads/
+wp-content/themes/twentynineteen
+wp-content/themes/twentyseventeen
+wp-content/themes/twentysixteen

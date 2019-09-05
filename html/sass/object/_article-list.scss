@@ -11,10 +11,10 @@
 
   &__container{
 
-      background: url(../../img/bg-1.jpg);
-      padding: 15px;
-      width: 100%;
-      max-width: 960px;
+    background: url(../../img/bg-1.jpg);
+    padding: 15px;
+    width: 100%;
+    max-width: 960px;
   }
 }
 .list-wrapper{
@@ -26,16 +26,19 @@
 }
 .article-list{
   background-color: $sub-color;
-  // display: flex;
-  // flex-wrap: wrap;
   width: calc(100% - 10px);
-  margin-top: 10px;
+  margin: 10px;
   border: 1px solid $border-color;
   border-radius: 10px;
 
-  & img{
+  &__img{
+    width: 100%;
     object-fit: contain;
-    max-width: 100%;
+
+  }
+
+  & img{
+    width: 100%;
     border-radius: 10px 10px 0 0;
   }
 
@@ -77,7 +80,20 @@
   }
   .article-list{
     width: calc(50% - 40px / 2);
-    margin: 10px;
+
+    &__img{
+      overflow: hidden;
+
+      & img{
+        transition-duration: 0.3s;
+
+        &:hover{
+          transform: scale(1.1);
+          transition-duration: 0.3s;
+          opacity: .5;
+        }
+      }
+    }
   }
 
 }
