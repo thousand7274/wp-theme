@@ -1,0 +1,74 @@
+#wij_weather_in_japan {
+  overflow: hidden;
+  text-align: center;
+}
+
+#wij_weather_in_japan #wij_container {
+  margin: 10px 0 15px;
+  border-radius: 4px;
+
+}
+
+#wij_weather_in_japan #wij_container:last-child {
+  margin: 0;
+}
+
+#wij_weather_in_japan p {
+  margin: 0;
+}
+
+#wij_weather_in_japan .location {
+  text-align: left;
+  font-weight: bold;
+  /* padding: 5px; */
+  padding-bottom: 20px;
+  margin: 0 0 12px;
+  background-color: #fcfcfc;
+}
+
+#wij_weather_in_japan ul {
+  list-style: none;
+  clear: both;
+  overflow: hidden;
+  margin: 0 0 12px;
+  font-size: 90%;
+}
+
+#wij_weather_in_japan ul li {
+  width: calc(100% / 3);
+  float: left;
+}
+
+#wij_weather_in_japan #wij_container.count1 li {
+  width: 100%;
+}
+
+#wij_weather_in_japan #wij_container.count2 li {
+  width: calc(100% / 2);
+}
+
+#wij_weather_in_japan #wij_container.count3 li {
+  width: calc(100% / 3);
+}
+
+#wij_weather_in_japan #wij_container #yes_hide_this1,
+#wij_weather_in_japan #wij_container #yes_hide_this2,
+#wij_weather_in_japan #wij_container #yes_hide_this3 {
+  display: none;
+}
+
+#wij_weather_in_japan ul li img {
+  margin: 5px 0 0;
+}
+
+#wij_weather_in_japan ul li .thermometer {
+  margin: 5px 0 0;
+}
+
+#wij_weather_in_japan ul li .thermometer span {
+  color: red;
+}
+
+#wij_weather_in_japan ul li .thermometer span:last-child {
+  color: blue;
+}
