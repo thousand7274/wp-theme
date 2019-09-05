@@ -33,6 +33,13 @@
 
     }
   }
+  .plofile-img{
+    max-width: 300px;
+
+    & img{
+      width: 100%;
+    }
+  }
 
 }
 /* MediaQuery end */
