@@ -1,3 +1,4 @@
 <?php  get_header();?>
-<?php echo do_shortcode('[booking_package id=2]')?>
+<h2 class="main-title">予約はこちらから！</h2>
+<?php echo do_shortcode('[booking_package id=3]')?>
 <?php  get_footer();?>
